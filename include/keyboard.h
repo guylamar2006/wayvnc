@@ -39,6 +39,7 @@ struct keyboard {
 	struct table_entry* lookup_table;
 
 	struct intset key_state;
+	bool handle_key_repeat;
 };
 
 int keyboard_init(struct keyboard* self, const struct xkb_rule_names* rule_names);
